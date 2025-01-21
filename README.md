@@ -1,14 +1,3 @@
-# 446-hw-base
-
-The base for CSE 446 homeworks.
-This README will be copied for each homework.
-
-# Reading Markdown files
-Before you start doing anything, please make sure you have a proper way of reading markdown files.
-You can use any tool you would like for it.
-Python IDEs that we recommend for this class (VSCode or PyCharm) come with Markdown readers built-in.
-
-
 # Setup
 
 **You only need to do setup once**, then for future homeworks you can run `conda activate cse446`.
@@ -185,27 +174,3 @@ Ran 10 tests in 0.197s
 
 OK
 ```
-
-## Linting
-
-Linting is **not required** for this class.
-However, it can be helpful to keep your code linted, especially if this is your first time learning python or if you never had a formal introduction.
-
-For this we provided you with a simple script to track issues & possibly fix your code.
-To run linter:
-```
-inv lint
-```
-which will generate output
-```
-> inv lint
-flake8 homeworks
-homeworks/hw1/poly_regression/polyreg.py:103:5: E303 too many blank lines (4)
-```
-You can see that issue points to file (`polyreg.py`), line (105) and column (3) as well as the issue "too many blank lines".
-
-Note that we are using 4 linters (flake8, isort, black, mypy; in that order).
-If you have issues that are pointed out by isort or black you can run `inv lint --apply` to automatically apply fixes.
-
-Again, linting is **not required** for this class.
-If you don't want to lint your code, or prefer some other linting setup that's ok!
